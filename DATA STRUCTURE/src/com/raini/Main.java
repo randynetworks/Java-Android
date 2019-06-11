@@ -10,19 +10,24 @@ public class Main {
         ArrayList animals = new ArrayList();
         animals.add("pig");
         animals.add("Cow");
-        animals.add("Parrot");
+        animals.add("Pig");
+        animals.add("Cheetah");
 
-        for (int i = 0; i < animals.size(); i++){
-            System.out.println("Animals: " + animals.get(i));
+//        animals.remove(0);
+//        animals.add(0, "Dog");
+//        animals.remove("Cow");
+        if (animals.contains("Parrot")){
+            animals.remove("Parrot");
+        }else{
+            System.out.println("Nope");
         }
+
+        System.out.println(animals.size());
 
         //cleaver for loop
         for (Object animal : animals){
             System.out.println(animal);
         }
-
-
-
 
 //        //ARRAY DECLARATION
 //        int [] myArray = {1,2, 3, 4,5,6,7};
@@ -36,14 +41,10 @@ public class Main {
 //        newArray[2] = 5;
 //        newArray[3] = 1;
 //        newArray[4] = 12;
-//
-//
-//
+
 //        // array have length.
 //        for (int i = 0; i < newArray.length; i++){
 //            System.out.println("Item " + newArray[i]);
 //        }
-
-
     }
 }
