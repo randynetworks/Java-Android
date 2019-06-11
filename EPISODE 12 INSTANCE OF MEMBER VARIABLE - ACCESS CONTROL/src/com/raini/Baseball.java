@@ -1,4 +1,9 @@
 package com.raini;
 
-public class Baseball {
+public class Baseball extends ball  {
+    //Properties
+
+
+
+    //Behaviors (override), new ones
 }
